@@ -6,42 +6,47 @@ public class Movement : MonoBehaviour {
 
     public Rigidbody rb;
 
+    public GameObject cubo;
+
     public float force = 500f;
+
+    private bool reproduzir = false;
 
     // Use this for initialization
     void Start () {
-		
-	}
+        InvokeRepeating("Reproduzir", 5.0f, 5.0f);
+    }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Random rnd = new Random();
+        Rigidbody rb =cubo.GetComponent<Rigidbody>();
 
         int direcao = Random.Range(1, 5);
 
         if(direcao == 1)
         {
-            Debug.Log("1");
             rb.AddForce(0, 0, force * Time.deltaTime);
         }
 
         if (direcao == 2)
         {
-            Debug.Log("2");
             rb.AddForce(force * Time.deltaTime, 0, 0);
         }
 
         if (direcao == 3)
         {
-            Debug.Log("3");
             rb.AddForce(0, 0, -force * Time.deltaTime);
         }
 
         if (direcao == 4)
         {
-            Debug.Log("4");
             rb.AddForce(-force * Time.deltaTime, 0, 0);
         }
+    }
+
+    void Reproduzir()
+    {
+        Instantiate(cubo, new Vector3(rb.position.x + 1, rb.position.y, rb.position.z), Quaternion.identity);
     }
 }
