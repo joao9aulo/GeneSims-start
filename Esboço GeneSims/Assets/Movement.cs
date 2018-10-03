@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour {
 
     public float force = 500f;
 
-    private bool reproduzir = false;
+    public static int count = 0;
 
     // Use this for initialization
     void Start () {
@@ -47,6 +47,10 @@ public class Movement : MonoBehaviour {
 
     void Reproduzir()
     {
-        Instantiate(cubo, new Vector3(rb.position.x + 1, rb.position.y, rb.position.z), Quaternion.identity);
+        count++;
+        if (count < 2500) {  
+            Instantiate(cubo, new Vector3(rb.position.x + 1, rb.position.y, rb.position.z), Quaternion.identity);
+        }
+        
     }
 }
