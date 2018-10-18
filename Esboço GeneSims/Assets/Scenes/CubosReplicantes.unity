@@ -250,7 +250,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.24697572, y: 1.9879131e-16, z: 0.000000029441798, w: 0.9690217}
-  m_LocalPosition: {x: -0, y: 25.03, z: -39.81}
+  m_LocalPosition: {x: 0, y: 9.6, z: -11.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 786374124}
   cubo: {fileID: 786374123}
-  force: 2000
+  force: 2500
 --- !u!1 &1503711585
 GameObject:
   m_ObjectHideFlags: 0
