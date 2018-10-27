@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Mover.cs" />
     <Compile Include="Assets\ReplicarMover.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/joao9/Projeto/Esboço GeneSims/GeneSims-start/Esboço GeneSims/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

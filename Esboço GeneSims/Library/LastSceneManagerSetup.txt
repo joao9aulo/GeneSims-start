@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CubosReplicantes.unity
+- path: Assets/Scenes/Estudo criatura.unity
   isLoaded: 1
   isActive: 1
